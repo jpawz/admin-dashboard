@@ -15,6 +15,17 @@
     background-color: antiquewhite;
 }
 
+.header-top {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+}
+
+.header-down {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+}
+
+
 .content {
     background-color: cadetblue;
 }
