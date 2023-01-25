@@ -1,77 +1,105 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
 }
 
 .sidebar {
-    font-size: larger;
-    background-color: cornflowerblue;
-    grid-row: 1 /3;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 15px;
+  font-size: larger;
+  background-color: cornflowerblue;
+  grid-row: 1 /3;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px;
 }
 
-.sidebar div, nav {
-    display: grid;
-    grid-template-columns: auto;
-    justify-items: start;
+.sidebar div,
+nav {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: start;
 }
 
 nav > a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 1.5rem;
-    padding: 10px 0px;
-    text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1.5rem;
+  padding: 10px 0px;
+  text-decoration: none;
 }
 
-img {
-    height: 100%;
-    margin-right: 10px;
+.sidebar img {
+  height: 100%;
+  margin-right: 10px;
 }
 
 .sidebar > div > h2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2rem;
 }
 
 .header {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
 .header-top {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
 }
 
 .header-down {
-    display: grid;
-    grid-template-columns: 1fr auto auto auto;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
 }
 
 .content {
-    background-color: cadetblue;
-    display: grid;
-    grid-template-columns: 1fr auto;
+  background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 
 .right-bar {
-    display: grid;
-    grid-template-columns: 250px;
+  display: grid;
+  grid-template-columns: 250px;
+}
+
+.projects {
+  padding: 20px;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border-left: 10px solid orange;
+  display: grid;
+}
+
+.card > span {
+  justify-self: end;
+  align-self: end;
+}
+
+.card > h3 {
+  padding: 5px 0px 10px 0px;
+}
+
+.card > span img {
+  height: 1.5rem;
+  padding: 0px 5px;
 }
