@@ -31,6 +31,11 @@
     grid-template-columns: 1fr auto;
 }
 
+.right-bar {
+    display: grid;
+    grid-template-columns: 250px;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
