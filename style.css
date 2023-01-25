@@ -25,12 +25,13 @@
     justify-items: start;
 }
 
-nav > span {
+nav > a {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 1.5rem;
     padding: 10px 0px;
+    text-decoration: none;
 }
 
 img {
