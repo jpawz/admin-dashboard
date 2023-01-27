@@ -14,6 +14,10 @@ body {
   background-color: var(--gray);
 }
 
+img {
+  height: 1.5rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -63,16 +67,45 @@ nav > a {
 
 .header {
   background-color: var(--white);
+  padding: 15px 40px;
+}
+
+.header input {
+  margin: 0px 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 100px;
+  background-color: var(--gray);
+  border: none;
+  height: 1.5rem;
 }
 
 .header-top {
   display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  grid-template-columns: auto 1fr auto auto auto;
+  align-items: center;
+  gap: 30px;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .header-down {
   display: grid;
-  grid-template-columns: 1fr auto auto auto;
+  grid-template-columns: auto 1fr auto auto auto;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.header-down button {
+  height: 3rem;
+  width: 100px;
+  border: none;
+  border-radius: 100px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .content {
@@ -137,7 +170,6 @@ nav > a {
 }
 
 .trending img {
-  height: 3rem;
   padding-right: 10px;
 }
 
@@ -155,4 +187,16 @@ nav > a {
 
 .trending span:first-child {
   font-weight: 700;
+}
+
+.user span {
+  font-weight: 700;
+}
+
+.avatar {
+  height: 3rem;
+}
+
+.avatar-big {
+  height: 5rem;
 }
